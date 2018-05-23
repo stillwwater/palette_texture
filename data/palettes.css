@@ -1,0 +1,11 @@
+config {
+    width: 512px; /* texture size */
+}
+
+default {
+    background: #141414;
+    background: #282828;
+    background: #505050;
+    background: #a0a0a0;
+    background: #ffffff;
+}

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Palette Texture</title>
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="tool file-upload">
+      <p>File</p>
+      <input class="btn btn-default" id="src-file" type="file" />
+      <button type="button" class="btn btn-default" id="upload-file">Upload</button>
+      <br/><br/>
+    </div>
+    <div class="tool render-controls">
+      <p>Rendering</p>
+      <input id="palette-name" type="text" placeholder="default" />
+      <button type="button" class="btn btn-default" id="load-palette">Load Palette</button>
+      <button type="button" class="btn btn-default" id="save-image">Export PNG</button>
+      <br/><br/>
+    </div>
+    <br/><br/>
+    <div class "data">
+      <p>Editor</p>
+      <button class="btn btn-default" id="run" type="button">Run</button>
+      <textarea id="content-editor"></textarea>
+    </div>
+  </div>
+  <div class="render-container">
+      <div id="render"></div>
+  </div>
+  <div id="canvas-container"></div>
+</body>
+<script src="./lib/html2canvas.min.js"></script>
+<script src="./src/main.js"></script>
+
+</html>
